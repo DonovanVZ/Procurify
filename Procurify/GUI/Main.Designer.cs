@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.pnlControlsContainer = new System.Windows.Forms.Panel();
             this.controls1 = new System.Windows.Forms.TableLayoutPanel();
+            this.statisticsList1 = new Procurify.Sub_Controls.StatisticsList();
+            this.statisticsList2 = new Procurify.Sub_Controls.StatisticsList();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -70,8 +72,6 @@
             this.frame = new Procurify.Sub_Controls.ControlFrame();
             this.openMenu = new System.Windows.Forms.Timer(this.components);
             this.closeMenu = new System.Windows.Forms.Timer(this.components);
-            this.statisticsList1 = new Procurify.Sub_Controls.StatisticsList();
-            this.statisticsList2 = new Procurify.Sub_Controls.StatisticsList();
             this.pnlControlsContainer.SuspendLayout();
             this.controls1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -116,6 +116,24 @@
             this.controls1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.controls1.Size = new System.Drawing.Size(1834, 339);
             this.controls1.TabIndex = 12;
+            // 
+            // statisticsList1
+            // 
+            this.statisticsList1.BackColor = System.Drawing.Color.White;
+            this.statisticsList1.HeaderText = "Alerts";
+            this.statisticsList1.Location = new System.Drawing.Point(3, 3);
+            this.statisticsList1.Name = "statisticsList1";
+            this.statisticsList1.Size = new System.Drawing.Size(753, 333);
+            this.statisticsList1.TabIndex = 0;
+            // 
+            // statisticsList2
+            // 
+            this.statisticsList2.BackColor = System.Drawing.Color.White;
+            this.statisticsList2.HeaderText = "Requisitions";
+            this.statisticsList2.Location = new System.Drawing.Point(920, 3);
+            this.statisticsList2.Name = "statisticsList2";
+            this.statisticsList2.Size = new System.Drawing.Size(753, 333);
+            this.statisticsList2.TabIndex = 1;
             // 
             // pnlMenu
             // 
@@ -467,7 +485,6 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.Location = new System.Drawing.Point(54, 3);
             this.btnSettings.Name = "btnSettings";
@@ -628,24 +645,6 @@
             // 
             this.closeMenu.Interval = 5;
             this.closeMenu.Tick += new System.EventHandler(this.closeMenu_Tick);
-            // 
-            // statisticsList1
-            // 
-            this.statisticsList1.BackColor = System.Drawing.Color.White;
-            this.statisticsList1.HeaderText = "Alerts";
-            this.statisticsList1.Location = new System.Drawing.Point(3, 3);
-            this.statisticsList1.Name = "statisticsList1";
-            this.statisticsList1.Size = new System.Drawing.Size(753, 333);
-            this.statisticsList1.TabIndex = 0;
-            // 
-            // statisticsList2
-            // 
-            this.statisticsList2.BackColor = System.Drawing.Color.White;
-            this.statisticsList2.HeaderText = "Requisitions";
-            this.statisticsList2.Location = new System.Drawing.Point(920, 3);
-            this.statisticsList2.Name = "statisticsList2";
-            this.statisticsList2.Size = new System.Drawing.Size(753, 333);
-            this.statisticsList2.TabIndex = 1;
             // 
             // Main
             // 
